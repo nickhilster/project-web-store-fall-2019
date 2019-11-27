@@ -25,6 +25,7 @@ h4 {
 footer {
         text-align: center;
         display: block;
+        background-color: darkgray;
         }
 
 
@@ -43,7 +44,7 @@ footer {
 
 .content {
           width: auto;
-          padding-top: 0.5em;
+          padding-top: 5em;
           padding-bottom: 0.5em;
           display: block;
           margin-left: auto;
@@ -69,12 +70,6 @@ footer {
   text-align: justify;
   padding-left: .7em;
   padding-right: .7em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-label {
-  align-content: center;
   margin-left: auto;
   margin-right: auto;
 }
