@@ -36,7 +36,15 @@ footer {
             display: block;
             margin-left: auto;
             margin-right: auto;
+            align-items: center;
           }
+
+.product {        
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  align-items: center;
+  grid-gap: 1em;
+        }
 
 .menutab {
           display: none;
@@ -44,7 +52,7 @@ footer {
 
 .content {
           width: auto;
-          padding-top: 5em;
+          padding-top: 0.5em;
           padding-bottom: 0.5em;
           display: block;
           margin-left: auto;

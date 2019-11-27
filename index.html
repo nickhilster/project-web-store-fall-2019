@@ -1,58 +1,59 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nike Web Store</title>
-    <meta name="description" content="Online store for Nike shoes">
-    <meta name="author" content="Nikhil Khedkar">
-    <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header>
-      <nav aria-label="Primary">
-            <button type="button">
-              <span class="material-icons">menu</span>
-            </button>
-                <form>
-                    <label>Search
-                      <input type="search" name="find" id="find">
-                    </label>
-                    <button type="button"><span class="material-icons">search</span></button>
-                  </form>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Web Store</title>
+  <meta name="description" content="Online store for Nike shoes">
+  <meta name="author" content="Nikhil Khedkar">
+  <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav aria-label="Primary">
+      <button type="button">
+        <span class="material-icons">menu</span>
+      </button>
+      <form>
+        <label>Search
+          <input type="search" name="find" id="find">
+        </label>
+        <button type="button"><span class="material-icons">search</span></button>
+      </form>
       <!-- Site logo, replace with your own -->
       <a href="index.html"><img src="img/nike-logo.png" alt="Nike swoosh logo" class="nikelogo"></a>
 
       <!-- Navigation menu and toggle button (non-functional) -->
-      
+
       <ul class="menutab">
-          <li><a href="#">Home</a></li>          
-          <li><a href="#">Products</a></li>          
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About</a></li>          
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
       </ul>
-      </nav>
+    </nav>
 
-      <!-- Search for a product (non-functional) -->
-      
+    <!-- Search for a product (non-functional) -->
 
-      <!-- Additional nav links -->
+    <!-- Additional nav links -->
 
-      <!-- <ul>
+    <!-- <ul>
         <li><a href="#"><span class="material-icons">favorite_border</span></a></li>
         <li><a href="#"><span class="material-icons">shopping_cart</span></a></li>
       </ul> -->
-    </header>
+  </header>
 
-    <main>
-      <header>
-        <h1>NIKE </h1>
+  <main>
+    <header>
+      <h1>NIKE</h1>
 
-        <!-- Filtering product form -->
-        <!--
+      <!-- Filtering product form -->
+      <!--
         <form>
           <h2>Filters</h2>
           <fieldset>
@@ -118,20 +119,24 @@
       <section>
         <h2>Results</h2>
       -->
-
+      <section class="product">
         <!-- Product 1 -->
         <article>
           <header>
-            <img src="img/metcon 5.jpg" alt="Image of Nike Metcon 5 running shoes with blue and pink squares on white" class="content">
+            <img src="img/metcon 5.jpg" alt="Image of Nike Metcon 5 running shoes with blue and pink squares on white"
+              class="content">
           </header>
           <h3>Nike Metcon 5</h3>
-          <p class="textcontent">The Nike Metcon 5 is our most tuned Metcon yet. This means specific stability for heavy lifting, traction made for speed and durability where you need it. It even includes a Hyperlift insert that's compatible with all prior versions of the Metcon. Meet your secret weapon for weight-lifting and high-impact training.</p>
-          
+          <p class="textcontent">The Nike Metcon 5 is our most tuned Metcon yet. This means specific stability for heavy
+            lifting, traction made for speed and durability where you need it. It even includes a Hyperlift insert
+            that's compatible with all prior versions of the Metcon. Meet your secret weapon for weight-lifting and
+            high-impact training.</p>
+
           <form>
             <fieldset>
               <legend>Colours</legend>
               <ul>
-                <li><label><input type="radio" name="colour" value="r" > Pink </label></li>
+                <li><label><input type="radio" name="colour" value="r"> Pink </label></li>
                 <li><label><input type="radio" name="colour" value="w"> White</label></li>
                 <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
               </ul>
@@ -149,7 +154,9 @@
             <footer>
               <dl>
                 <dt>Rating</dt>
-                <dd>4.5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+                <dd>4.5 <span class="material-icons">star</span><span class="material-icons">star</span><span
+                    class="material-icons">star</span><span class="material-icons">star</span><span
+                    class="material-icons">star_half</span></dd>
               </dl>
               <data value="39"><del>$170.00</del> <ins>$140.00</ins></data>
               <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
@@ -163,10 +170,14 @@
         <!-- Product 2 -->
         <article>
           <header>
-            <img src="img/nike air max 270 react.jpg" alt="image of of nike air maz 270 react - all black running shoes with blue nike swoosh logo overlaying each other" class="content">
+            <img src="img/nike air max 270 react.jpg"
+              alt="image of of nike air maz 270 react - all black running shoes with blue nike swoosh logo overlaying each other"
+              class="content">
           </header>
           <h3>Nike Air Max 270 React</h3>
-          <p>Inspired by the unexpected details of an urban landscape, the Nike Air Max 270 React features peek-a-boo branding in bold hues on a mesh and synthetic leather upper. Nike React foam and 270 Max Air unit deliver unrivalled comfort from heel to toe.</p>
+          <p>Inspired by the unexpected details of an urban landscape, the Nike Air Max 270 React features peek-a-boo
+            branding in bold hues on a mesh and synthetic leather upper. Nike React foam and 270 Max Air unit deliver
+            unrivalled comfort from heel to toe.</p>
           <form>
             <fieldset>
               <legend>Colours</legend>
@@ -189,7 +200,8 @@
             <footer>
               <dl>
                 <dt>Rating</dt>
-                <dd>4.0 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span></dd>
+                <dd>4.0 <span class="material-icons">star</span><span class="material-icons">star</span><span
+                    class="material-icons">star</span><span class="material-icons">star</span></dd>
               </dl>
               <data value="39"><del>$195.00</del> <ins>$175.00</ins></data>
               <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
@@ -197,6 +209,7 @@
               <a href="#">see more</a>
             </footer>
           </form>
+          <a href="#" class="buynow">Buy Now</a>
         </article>
 
         <!-- Product 3 -->
@@ -205,7 +218,9 @@
             <img src="img/Nike Air Max 97.jpg" alt="Image of Nike Air Max 97 white running shoes" class="content">
           </header>
           <h3>Nike Air Max 97</h3>
-          <p>Featuring the same ripple design of the OG, inspired by the motion of water dripping into a pool, the Nike Air Max 97 is still making waves. The full-length Max Air unit that shook up the running world gets an urban update with fresh colours and crisp details up top.</p>
+          <p>Featuring the same ripple design of the OG, inspired by the motion of water dripping into a pool, the Nike
+            Air Max 97 is still making waves. The full-length Max Air unit that shook up the running world gets an urban
+            update with fresh colours and crisp details up top.</p>
           <form>
             <fieldset>
               <legend>Colours</legend>
@@ -228,7 +243,9 @@
             <footer>
               <dl>
                 <dt>Rating</dt>
-                <dd>5.0 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span></dd>
+                <dd>5.0 <span class="material-icons">star</span><span class="material-icons">star</span><span
+                    class="material-icons">star</span><span class="material-icons">star</span><span
+                    class="material-icons">star</span></dd>
               </dl>
               <data value="39"><del>$240.00</del> <ins>$200.00</ins></data>
               <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
@@ -237,14 +254,17 @@
             </footer>
           </form>
         </article>
-  
+
         <!-- Product 4 -->
         <article>
           <header>
-            <img src="img/Nike Air VaporMax 2019 DRT.jpg" alt="Product Image for Nike Air VaporMax 2019 DRT" class="content">
+            <img src="img/Nike Air VaporMax 2019 DRT.jpg" alt="Product Image for Nike Air VaporMax 2019 DRT"
+              class="content">
           </header>
           <h3>Nike Air VaporMax 2019 DRT</h3>
-          <p>Designed for running but adopted by the street, the Nike Air VaporMax 2019 DRT features the lightest, most flexible Max Air cushioning to date. Synthetic leather wraps your foot for support and stability, while an external reinforcement in the heel secures the back of your foot.</p>
+          <p>Designed for running but adopted by the street, the Nike Air VaporMax 2019 DRT features the lightest, most
+            flexible Max Air cushioning to date. Synthetic leather wraps your foot for support and stability, while an
+            external reinforcement in the heel secures the back of your foot.</p>
           <form>
             <fieldset>
               <legend>Colours</legend>
@@ -267,7 +287,9 @@
             <footer>
               <dl>
                 <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span
+                    class="material-icons">star</span><span class="material-icons">star</span><span
+                    class="material-icons">star_half</span></dd>
               </dl>
               <data value="39"><del>$255.00</del> <ins>$200.00</ins></data>
               <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
@@ -283,7 +305,9 @@
             <img src="img/nike free metcon 2.jpg" alt="Product Image for nike free metcon 2" class="content">
           </header>
           <h3>Nike Free Metcon 2</h3>
-          <p>The Nike Free X Metcon will take you from a short run to your gym workout. Superior breathability and comfort combined with durability and response make this stable trainer perfect for even the most ambitious of fitness goals.</p>
+          <p>The Nike Free X Metcon will take you from a short run to your gym workout. Superior breathability and
+            comfort combined with durability and response make this stable trainer perfect for even the most ambitious
+            of fitness goals.</p>
           <form>
             <fieldset>
               <legend>Colours</legend>
@@ -306,7 +330,9 @@
             <footer>
               <dl>
                 <dt>Rating</dt>
-                <dd>4.5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+                <dd>4.5 <span class="material-icons">star</span><span class="material-icons">star</span><span
+                    class="material-icons">star</span><span class="material-icons">star</span><span
+                    class="material-icons">star_half</span></dd>
               </dl>
               <data value="39"><del>$160.00</del> <ins>$140.00</ins></data>
               <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
@@ -327,23 +353,24 @@
           <li><a href="#" aria-label="Page 5">5</a></li>
         </ol>
       </section>
-    </main>
+  </main>
 
-    <footer>
-      <p>&copy; Copyright, 1991.</p>
-      <nav aria-label="Legal">
-        <ul>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Accessibility Policy</a></li>
-        </ul>
-      </nav>
+  <footer>
+    <p>&copy; Copyright, 1991.</p>
+    <nav aria-label="Legal">
       <ul>
-        <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
-        <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
-        <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Accessibility Policy</a></li>
       </ul>
-    </footer>
+    </nav>
+    <ul>
+      <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
+      <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
+      <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
+    </ul>
+  </footer>
+  </section>
+</body>
 
-  </body>
 </html>
