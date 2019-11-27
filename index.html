@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document title</title>
-    <meta name="description" content="[A short description]">
+    <title>Nike Web Store</title>
+    <meta name="description" content="Online store for Nike shoes">
     <meta name="author" content="Nikhil Khedkar">
     <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -12,58 +12,56 @@
   </head>
   <body>
     <header>
+      <nav aria-label="Primary">
+            <button type="button">
+              <span class="material-icons">menu</span>
+            </button>
+                <form>
+                    <label>Search
+                      <input type="search" name="find" id="find">
+                    </label>
+                    <button type="button"><span class="material-icons">search</span></button>
+                  </form>
       <!-- Site logo, replace with your own -->
-      <a href="index.html"><img src="img/logo.svg" alt="HTML Logo (replace this)"></a>
+      <a href="index.html"><img src="img/nike-logo.png" alt="Nike swoosh logo" class="nikelogo"></a>
 
       <!-- Navigation menu and toggle button (non-functional) -->
-      <nav aria-label="Primary">
-        <button type="button">
-          <span class="material-icons">menu</span>
-        </button>
-        <ul>
-          <li><a href="#">Category</a>
-            <ul>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Category</a></li>
-        </ul>
+      
+      <ul class="menutab">
+          <li><a href="#">Home</a></li>          
+          <li><a href="#">Products</a></li>          
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>          
+      </ul>
       </nav>
 
       <!-- Search for a product (non-functional) -->
-      <form>
-        <label>Search
-          <input type="search" name="find" id="find">
-        </label>
-        <button type="button"><span class="material-icons">search</span></button>
-      </form>
+      
 
       <!-- Additional nav links -->
 
-      <ul>
+      <!-- <ul>
         <li><a href="#"><span class="material-icons">favorite_border</span></a></li>
         <li><a href="#"><span class="material-icons">shopping_cart</span></a></li>
-      </ul>
+      </ul> -->
     </header>
 
     <main>
       <header>
-        <h1>Sale on Vinyl </h1>
+        <h1>NIKE </h1>
 
         <!-- Filtering product form -->
+        <!--
         <form>
           <h2>Filters</h2>
           <fieldset>
             <label for="sort">Show</label>
             <select name="sort" id="sort">
+              <option value="newest">Newest releases</option>
               <option value="price-high">Price, highest to lowest</option>
               <option value="price-low">Price, lowest to highest</option>
-              <option value="newest">Newest releases</option>
-            </select>
+                          </select>
           </fieldset>
           <fieldset>
             <legend>Colour</legend>
@@ -77,17 +75,17 @@
           </fieldset>
           <fieldset>
             <legend>Sizes</legend>
-            <ol>
-              <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">XS</label></li>
-              <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="sm">S</label></li>
-              <li><input type="checkbox" name="size" value="md" id="md"> <label for="md">M</label></li>
-              <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="lg">L</label></li>
-              <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="xl">XL</label></li>
-            </ol>
+            <ul>
+              <li><input type="checkbox" name="size" value="8" id="8"> <label for="8">8</label></li>
+              <li><input type="checkbox" name="size" value="9" id="9"> <label for="9">9</label></li>
+              <li><input type="checkbox" name="size" value="10" id="10"> <label for="10">10</label></li>
+              <li><input type="checkbox" name="size" value="11" id="11"> <label for="11">11</label></li>
+              <li><input type="checkbox" name="size" value="x12" id="12"> <label for="12">12</label></li>
+            </ul>
           </fieldset>
           <fieldset>
             <legend>Ratings (above)</legend>
-            <ol>
+            <ul>
               <li>
                 <input type="radio" name="rating" value="4" id="aboveFour">
                 <label for="aboveFour">
@@ -112,26 +110,28 @@
                   <span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
                 </label>
               </li>
-            </ol>
+            </ul>
           </fieldset>
         </form>
       </header>
 
       <section>
         <h2>Results</h2>
+      -->
 
         <!-- Product 1 -->
         <article>
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <img src="img/metcon 5.jpg" alt="Image of Nike Metcon 5 running shoes with blue and pink squares on white" class="content">
           </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
+          <h3>Nike Metcon 5</h3>
+          <p class="textcontent">The Nike Metcon 5 is our most tuned Metcon yet. This means specific stability for heavy lifting, traction made for speed and durability where you need it. It even includes a Hyperlift insert that's compatible with all prior versions of the Metcon. Meet your secret weapon for weight-lifting and high-impact training.</p>
+          
           <form>
             <fieldset>
               <legend>Colours</legend>
               <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
+                <li><label><input type="radio" name="colour" value="r" > Pink </label></li>
                 <li><label><input type="radio" name="colour" value="w"> White</label></li>
                 <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
               </ul>
@@ -149,30 +149,31 @@
             <footer>
               <dl>
                 <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+                <dd>4.5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
               </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+              <data value="39"><del>$170.00</del> <ins>$140.00</ins></data>
               <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
               <button type="button"><span class="material-icons">favorite</span></button>
               <a href="#">see more</a>
             </footer>
           </form>
+          <a href="#" class="buynow">Buy Now</a>
         </article>
 
         <!-- Product 2 -->
         <article>
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <img src="img/nike air max 270 react.jpg" alt="image of of nike air maz 270 react - all black running shoes with blue nike swoosh logo overlaying each other" class="content">
           </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
+          <h3>Nike Air Max 270 React</h3>
+          <p>Inspired by the unexpected details of an urban landscape, the Nike Air Max 270 React features peek-a-boo branding in bold hues on a mesh and synthetic leather upper. Nike React foam and 270 Max Air unit deliver unrivalled comfort from heel to toe.</p>
           <form>
             <fieldset>
               <legend>Colours</legend>
               <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
+                <li><label><input type="radio" name="colour" value="r"> Maroon</label></li>
                 <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                <li><label><input type="radio" name="colour" value="b"> Black</label></li>
               </ul>
             </fieldset>
 
@@ -188,9 +189,9 @@
             <footer>
               <dl>
                 <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+                <dd>4.0 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span></dd>
               </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+              <data value="39"><del>$195.00</del> <ins>$175.00</ins></data>
               <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
               <button type="button"><span class="material-icons">favorite</span></button>
               <a href="#">see more</a>
@@ -201,16 +202,16 @@
         <!-- Product 3 -->
         <article>
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <img src="img/Nike Air Max 97.jpg" alt="Image of Nike Air Max 97 white running shoes" class="content">
           </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
+          <h3>Nike Air Max 97</h3>
+          <p>Featuring the same ripple design of the OG, inspired by the motion of water dripping into a pool, the Nike Air Max 97 is still making waves. The full-length Max Air unit that shook up the running world gets an urban update with fresh colours and crisp details up top.</p>
           <form>
             <fieldset>
               <legend>Colours</legend>
               <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
+                <li><label><input type="radio" name="colour" value="r"> White</label></li>
+                <li><label><input type="radio" name="colour" value="w"> Black</label></li>
                 <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
               </ul>
             </fieldset>
@@ -227,9 +228,9 @@
             <footer>
               <dl>
                 <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+                <dd>5.0 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span></dd>
               </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+              <data value="39"><del>$240.00</del> <ins>$200.00</ins></data>
               <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
               <button type="button"><span class="material-icons">favorite</span></button>
               <a href="#">see more</a>
@@ -240,17 +241,17 @@
         <!-- Product 4 -->
         <article>
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <img src="img/Nike Air VaporMax 2019 DRT.jpg" alt="Product Image for Nike Air VaporMax 2019 DRT" class="content">
           </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
+          <h3>Nike Air VaporMax 2019 DRT</h3>
+          <p>Designed for running but adopted by the street, the Nike Air VaporMax 2019 DRT features the lightest, most flexible Max Air cushioning to date. Synthetic leather wraps your foot for support and stability, while an external reinforcement in the heel secures the back of your foot.</p>
           <form>
             <fieldset>
               <legend>Colours</legend>
               <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
+                <li><label><input type="radio" name="colour" value="r"> Grey</label></li>
                 <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                <li><label><input type="radio" name="colour" value="b"> Gold</label></li>
               </ul>
             </fieldset>
 
@@ -268,7 +269,7 @@
                 <dt>Rating</dt>
                 <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
               </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+              <data value="39"><del>$255.00</del> <ins>$200.00</ins></data>
               <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
               <button type="button"><span class="material-icons">favorite</span></button>
               <a href="#">see more</a>
@@ -279,17 +280,17 @@
         <!-- Product 5 -->
         <article>
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <img src="img/nike free metcon 2.jpg" alt="Product Image for nike free metcon 2" class="content">
           </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
+          <h3>Nike Free Metcon 2</h3>
+          <p>The Nike Free X Metcon will take you from a short run to your gym workout. Superior breathability and comfort combined with durability and response make this stable trainer perfect for even the most ambitious of fitness goals.</p>
           <form>
             <fieldset>
               <legend>Colours</legend>
               <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
+                <li><label><input type="radio" name="colour" value="r"> Beige</label></li>
                 <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                <li><label><input type="radio" name="colour" value="b"> Black</label></li>
               </ul>
             </fieldset>
 
@@ -305,9 +306,9 @@
             <footer>
               <dl>
                 <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+                <dd>4.5 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
               </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+              <data value="39"><del>$160.00</del> <ins>$140.00</ins></data>
               <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
               <button type="button"><span class="material-icons">favorite</span></button>
               <a href="#">see more</a>

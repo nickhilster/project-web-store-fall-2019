@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i&display=swap');
+body { 
+  background-color:whitesmoke;
+  color: #090909;
+  font: 400 normal .85em Verdana, helvetica, arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+h2 {
+  font-size: 1em;
+}
+h3 {
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration-line: underline ;
+}
+h4 {
+  font-size: 1em;
+}
+footer {
+        text-align: center;
+        display: block;
+        }
+
+
+.nikelogo {
+            width: auto;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+.menutab {
+          display: none;
+        }
+
+.content {
+          width: auto;
+          padding-top: 0.5em;
+          padding-bottom: 0.5em;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+.buynow {
+          border-radius: 0.5em;
+          background-color: #ff0000;
+          color: white;
+          margin: 1em;
+          padding: 0.5em;
+          text-align: center;
+          text-decoration: none;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 10em;
+          text-transform: uppercase;
+       }
+.textcontent{
+  text-align: center;
+  text-align: justify;
+  padding-left: .7em;
+  padding-right: .7em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
