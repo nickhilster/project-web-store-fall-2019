@@ -13,7 +13,9 @@ h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
 }
 h2 {
-  font-size: 1em;
+  font-size: 2em;
+  text-align:center ;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h3 {
   font-size: 1.2em;
@@ -22,6 +24,7 @@ h3 {
 }
 h4 {
   font-size: 1em;
+  text-align: center;
 }
 footer {
         text-align: center;
@@ -45,6 +48,8 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   align-items: center;
   grid-gap: 1em;
+  padding: 1em;
+  grid-auto-columns: ;
         }
 
 .menutab {
@@ -74,6 +79,34 @@ footer {
           width: 10em;
           text-transform: uppercase;
        }
+.sizechoice {
+        border-radius: 0.5em;
+        background-color:gray;
+        color:black;
+        font-weight: bolder ;
+        margin: 0em;
+        padding: 0.5em;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 8em;
+        text-transform: uppercase;
+     }
+.bigtext {
+      border-radius: 0.5em;
+      background-color:black;
+      color: white;
+      margin: 1em;
+      padding: 0.5em;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 10em;
+      text-transform: uppercase;
+   }
 .textcontent{
   text-align: center;
   text-align: justify;
@@ -82,3 +115,9 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+.sizegrid {        
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  align-items: center;
+  grid-gap: .5em;
+        }
